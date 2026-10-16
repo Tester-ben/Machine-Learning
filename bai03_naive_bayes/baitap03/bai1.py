@@ -14,7 +14,7 @@ def bayes_nhieu_nhanh(priors, likelihoods):
 
 ten_nhom = ["hoc deu", "hoc don", "it hoc"]
 tien_nghiem = [0.50, 0.30, 0.20]
-xac_suat_qua_mon = [0.95, 0.70, 0.30]
+xac_suat_qua_mon = [0.95, 0.70, 0.30] 
 
 hau_nghiem = bayes_nhieu_nhanh(tien_nghiem, xac_suat_qua_mon)
 
@@ -23,4 +23,4 @@ for ten, p in zip(ten_nhom, hau_nghiem):
     print(f" P({ten} | da qua mon) = {p:.6f}")
 print(f" Tong ba xac suat      = {sum(hau_nghiem):.6f}")
 print()
-print("Tu kiem tra: tong = 1.000000, dung voi dieu kien xac suat.")
+print("Tu kiem tra: tong = 1.000000, dung voi dieu kien xac suat")
